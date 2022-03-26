@@ -1,0 +1,16 @@
+.jumbotron {
+    background: dodgerblue;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+body {font-family: 'Courier New', Courier, monospace;}
+
+
+.startButton{
+    background: dodgerblue;
+    color: white;
+}
