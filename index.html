@@ -6,23 +6,70 @@
 </head>
 
 <body>
- <header class="jumbotron" id="jumbotron">Quiz
-     <div>
-         <div class="timer" id="timer">Time Remaining</div>
-         <div class="score" id="score">Your Final Score</div>
-         <div class="highscore" id="highscore">Highscore</div>
-     </div>
- </header>
+    <div class="startBtn"><button>Start Quiz</button></div>
 
- <main>
-     <div>
-        <div class="questions-field" id="question-field">
-        <h1>
-         <p class="questions" id="question"> The following questions are random historical knowledge questions. You have 60 seconds, or until the timer runs out! Incorrect questions will result in a time deduction and impact your final score. Good luck! </p>
-        <button class="startBtn" id="startBtn">Start Quiz</button>
+    <div class="infoBox">
+        <div class="infoTitle">
+            <span>Before we begin!</span>
+        </div>
+        <div class="InfoList">
+            <div class="info">The following quiz will test your knowledge of general history. You will have 60 seconds to complete the test. Incorrect answers will cause a time deduction of 5 seconds. Final score will be determined by remaining time. Are you ready?</div>
+            </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+
+    <div class="quizBox">
+        <header>
+            <div class="title">Code Quiz</div>
+            <div class="timer">
+                <div class="timerText">Seconds Remaing</div>
+                <div class="timerSec">60</div>
+            </div>
+        </header>
+
+        <section>
+            <div class="questionList">
+                <span>This will be the question</span>
+            </div>
+                <div class="optionList">
+                    <div class="option">
+                        <span>Option 1</span>
+                    </div>
+                    <div class="option">
+                        <span>Option 2</span>
+                    </div>
+                    <div class="option">
+                        <span>Option 3</span>
+                    </div>
+                    <div class="option">
+                        <span>Option 4</span>
+                    </div>
+                </div>
+        </section>
+
+        <footer>
+        <div class="totalQuestions"></div>
+            <span>0<p>of</p><p>10</p>Question</span>
+            <button class="nextBtn">Next Question</button>
+        </div>
+
+        </footer>
+    </div>
+
+    <div class="resultBox">
+        <div class="completeText">Quiz End</div>
+        <div class="scoreText">
+            <span> your score is <p>0</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
         </div>
     </div>
- </main>
+
+    </div>
 
     <script src="./assests/script.js"></script>
 </body>
