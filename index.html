@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App | CodingNepal</title>
+    <title>History Quiz</title>
     <link rel="stylesheet" href="assests/style.css">
-    <!-- FontAweome CDN Link for Icons -->
 </head>
 <body>
     <!-- start Quiz button -->
@@ -15,11 +14,7 @@
     <div class="info_box">
         <div class="info-title"><span>Some Rules of this Quiz</span></div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">You will have only 60 seconds to answer the 10 questions on general history knowledge. For every question answered incorrectly, time will be reduced from your score. High scores will be recorded. Good luck!</div>
         </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
@@ -30,10 +25,10 @@
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Awesome Quiz Application</div>
+            <div class="title">Mind the time!</div>
             <div class="timer">
-                <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
+                <div class="time_left_txt">Score:</div>
+                <div class="timer_sec">60</div>
             </div>
             <div class="time_line"></div>
         </header>
@@ -51,7 +46,7 @@
             <div class="total_que">
                 <!-- Here I've inserted Question Count Number from JavaScript -->
             </div>
-            <button class="next_btn">Next Que</button>
+            <button class="next_btn">Next</button>
         </footer>
     </div>
 
@@ -65,15 +60,12 @@
             <!-- Here I've inserted Score Result from JavaScript -->
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
         </div>
     </div>
 
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
     <script src="./assests/questions.js"></script>
-
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="./assests/script.js"></script>
 
 </body>
