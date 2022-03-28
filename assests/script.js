@@ -39,8 +39,8 @@ let userScore = 0;
 
 const nextBtn = quizBox.querySelector(".nextBtn");
 const resultBox = document.querySelector("resultBox");
-const restartQuiz = resultBox.querySelector(".buttons .restart");
-const quitQuiz = resultBox.querySelector(".buttons .quit");
+//const restartQuiz = resultBox.querySelector(".buttons .restart");
+//const quitQuiz = resultBox.querySelector(".buttons .quit");
 
 restartQuiz.onclick = ()=>{
     quitQuiz.classList.add("activeQuiz");    
