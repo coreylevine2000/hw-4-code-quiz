@@ -1,78 +1,80 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Code Quiz: History</title>
-    <link href="./assests/style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="assests/style.css">
+    <!-- FontAweome CDN Link for Icons -->
 </head>
-
 <body>
-    <div class="startBtn"><button>Start Quiz</button></div>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
 
-    <div class="infoBox">
-        <div class="infoTitle">
-            <span>Before we begin!</span>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
         </div>
-        <div class="InfoList">
-            <div class="info">The following quiz will test your knowledge of general history. You will have 60 seconds to complete the test. Incorrect answers will cause a time deduction of 5 seconds. Final score will be determined by remaining time. Are you ready?</div>
-            </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
             <button class="restart">Continue</button>
         </div>
+    </div>
 
-    <div class="quizBox">
+    <!-- Quiz Box -->
+    <div class="quiz_box">
         <header>
-            <div class="title">Code Quiz</div>
+            <div class="title">Awesome Quiz Application</div>
             <div class="timer">
-                <div class="timerText">Seconds Remaing</div>
-                <div class="timerSec">60</div>
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
             </div>
-            <div class="timeLine"></div>
+            <div class="time_line"></div>
         </header>
-
         <section>
-            <div class="questionList">
-                <span>This will be the question</span>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
             </div>
-                <div class="optionList">
-                    <div class="option">
-                        <span>Option 1</span>
-                    </div>
-                    <div class="option">
-                        <span>Option 2</span>
-                    </div>
-                    <div class="option">
-                        <span>Option 3</span>
-                    </div>
-                    <div class="option">
-                        <span>Option 4</span>
-                    </div>
-                </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
         </section>
 
+        <!-- footer of Quiz Box -->
         <footer>
-        <div class="totalQuestions"></div>
-            <span>0<p>of</p><p>10</p>Question</span>
-            <button class="nextBtn">Next Question</button>
-        </div>
-
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
         </footer>
     </div>
 
-    <div class="resultBox">
-        <div class="completeText">Quiz End</div>
-        <div class="scoreText">
-            <span> your score is <p>0</p></span>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
         </div>
         <div class="buttons">
-            <button class="restart">Replay</button>
-            <button class="quit">Quit</button>
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
         </div>
     </div>
 
-    </div>
-
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
     <script src="./assests/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="./assests/script.js"></script>
+
 </body>
 </html>
