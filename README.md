@@ -13,4 +13,4 @@ Users will be able to log and submit their final initials and final scores!
 
 Links:
 GIT: https://github.com/coreylevine2000/hw-4-code-quiz
-LIVE:
+LIVE: https://coreylevine2000.github.io/hw-4-code-quiz/
