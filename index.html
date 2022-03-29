@@ -1,72 +1,72 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>History Quiz</title>
-    <link rel="stylesheet" href="assests/style.css">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./assests/style.css">
 </head>
+
 <body>
-    <!-- start Quiz button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
-
-    <!-- Info Box -->
-    <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-        <div class="info-list">
-            <div class="info">You will have only 60 seconds to answer the 10 questions on general history knowledge. For every question answered incorrectly, time will be reduced from your score. High scores will be recorded. Good luck!</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
-    </div>
-
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <div class="title">Mind the time!</div>
-            <div class="timer">
-                <div class="time_left_txt">Score:</div>
-                <div class="timer_sec">60</div>
+    <div class="container">
+        <!-- Top fixed header (highscores and timer) -->
+        <header class="row">
+            <div class="col-md-6" id="timer">
+                Time: <span id="time">0</span>
             </div>
-            <div class="time_line"></div>
+
         </header>
-        <section>
-            <div class="que_text">
-                <!-- Here I've inserted question from JavaScript -->
+
+        <!-- Coding Challenge Title -->
+        <section id="title-section" class="show">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>General History Quiz!!!</h1>
+                </div>
             </div>
-            <div class="option_list">
-                <!-- Here I've inserted options from JavaScript -->
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Welcome to the General History Quiz, where the topics span across various elements throughout history!</p>
+                    <p>You will have 10 Questions to answer in 60 Seconds! Please note that every incorect answer will deduct 5 seconds from your time.</p>
+                    <p>Good Luck, Have Fun, and make some history with a Highscore!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="startButton">Start Quiz</button>
+                </div>
             </div>
         </section>
 
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
+        <!-- Coding questions -->
+        <section id="quiz-section" class="hide">
+            <div class="row">
+                <div class="col-md-12 questions">
+                    <h3 id="question-title"></h3>
+                </div>
             </div>
-            <button class="next_btn">Next</button>
-        </footer>
-    </div>
+            <div class="row">
+                <div class="col-md-12" id="choices"></div>
+                <div id="feedback" class="feedback hide"></div>
+            </div>
+        </section>
 
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay</button>
-            <button class="quit">Quit</button>
-        </div>
-    </div>
+        <!-- High Score section -->
+        <section id="highscore-section" class="hide">
+            <div class="row">
+                <div id="high-score" class="col-md-12">
+                    <h2>Quiz Complete!</h2>
+                    <h3>Congratulations <span id="final-score">0</span></h3>
+                    <label for="initials-area">Enter initials:</label>
+                    <input type="text" name="initials-area" maxlength="3" id="initials">
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
 
-    <script src="./assests/questions.js"></script>
-    <script src="./assests/script.js"></script>
+        <script type="text/javascript" src="./assests/questions.js"></script>
+        <script type="text/javascript" src="./assests/script.js"></script>
+        <script type="text/javascript" src="./assests/highscore.js"></script>
 
 </body>
+
 </html>
